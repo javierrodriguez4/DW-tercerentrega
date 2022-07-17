@@ -1,0 +1,73 @@
+@import "variables.scss";
+.nosotros{
+    width: 100%;
+}
+
+.nosotrosImagen{
+    display: flex;
+    justify-content: center;
+
+    img{
+        width: 500px;
+        padding: 30px
+    }
+}
+
+.nosotrosTitulo{
+    display: flex;
+    justify-content: center;
+
+    h2{
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+
+.nosotrosTexto{
+    display: flex;
+    justify-content: center;
+}
+
+@media(min-width:576px){
+    .nosotros{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas: "nosotrosTitulo nosotrosImagen"
+                             "nosotrosTexto nosotrosImagen";
+    }
+    
+    .nosotrosImagen{
+        grid-area: nosotrosImagen;
+
+        img{
+        width: 500px;
+        padding: 30px
+    
+    }
+}
+    
+    .nosotrosTitulo{
+        grid-area: nosotrosTitulo;
+
+        h2{
+            font-size: 40px;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+    }
+    
+    
+    .nosotrosTexto{
+        grid-area: nosotrosTexto;
+
+        p {
+            font-size: 25px;
+            padding: 20px;
+    }
+}
+}

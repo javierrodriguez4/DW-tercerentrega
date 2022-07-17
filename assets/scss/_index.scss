@@ -1,0 +1,27 @@
+@import "variables.scss";
+.heroImg{
+    animation-name: animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+
+@keyframes animation {
+    0% {
+        top: 0px;
+    }
+    50% {
+        top: 20px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+
+.tarjeta {
+    transition: transform 2s;
+    &:hover{
+        transform: scale(1.05);
+    }
+}
